@@ -9,7 +9,7 @@
 }
 html, body /*rajoute une marge au coté droit et gauche de la page*/
  {
-     padding: 0 3.4% 0 3.4%;
+     padding: 0;
  }
 
 /*CLASSES GENERALES*/
@@ -43,9 +43,19 @@ html, body /*rajoute une marge au coté droit et gauche de la page*/
     width: 25%;  /*tester ce paramètre fonctionne*/
     text-align: center;
 }
+.logo, .recherche, .filtres, .info, .hébergements, .activités
+{
+    margin-left: 58px;
+}
+.hébergements, .activités
+{
+    margin-right: 58px;
+}
 
-
-
+h1, h2, h3, .filterText, .buttonSearch, .afficher
+{
+    font-weight: bold;
+}
 /*CHARTE DE COULEURS*/
 .colorBlue
 {
@@ -122,7 +132,7 @@ ul, li
 
 .navborder:hover /*rajoute une bordure bleue au survol du lien "Hébergement" et "Activités" aux liens du menu nav*/
 {
-    border-top: 1px solid blue;
+    border-top: 2px solid blue;
 }
 .navborder /*rajoute une bordure transparente au menu au lien de li*/
 {
@@ -184,13 +194,20 @@ ul, li
 .margeFilter
 {
     margin-top: 50px;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
 }
 
 .filtres
 {
     display: flex;
     align-items: center;
+    
+}
+.filtresWrap
+{
+    display: flex;
+    flex-wrap: wrap;
+   
 }
 
 .margeFilterH3
@@ -201,11 +218,11 @@ ul, li
 
 .textFilterIcons
 {
-    border: 2px solid #F2F2F2;
+    border: 3px solid #F2F2F2;
     height: 50px;
     border-radius: 30px;
     margin-right: 20px;
-  
+    
 }
 
 .textFilterIcons:hover > .filterText  /* Pour changer d'apparence au survol des filtres */
@@ -248,6 +265,7 @@ ul, li
 { 
     display: flex;
     align-items: center;
+    margin-bottom: 30px;
 }
 .parentIcon
 {
@@ -268,6 +286,7 @@ ul, li
     padding-left: 2%;
     padding-right: 2%;
     margin-bottom: 5%;
+    padding-top: 20px;
 }
 .displayFlex
 {
@@ -283,10 +302,11 @@ ul, li
  .card
  {
     width: 30%; /*utiliser les pourcentage*/ 
+    height: 215px;
     margin-bottom: 5%;  /*En mettant auto pour ce paramêtre ça fait l'effet d'un flex around 10% c'est beaucoup trop 1 % léger décalage de 12 px*/
     background-color: white;
     border-radius: 20px 20px 20px 20px; 
-    box-shadow: 0 32px 35px 0 color gray;
+    box-shadow: 0 4px 8px 0 gray;
     transition: 0.3s; 
  }
  .card:hover  
@@ -376,6 +396,7 @@ ul, li
     padding-left: 2%;
     padding-right: 2%;
     padding-bottom: 2%;
+    padding-top: 20px;
     margin-bottom: 5%; 
 }
 .containerAside
@@ -452,15 +473,22 @@ ul, li
 {
     margin-bottom: 2%;
 }
-.popStars i
+.popStars
  {
+     display: flex;
      flex: 1;
-     margin-top: 10%;
-     justify-content: flex-end;
+     justify-content: flex-start;
+     align-items: flex-end;
+     flex-direction: row;
+     margin-bottom: 20px;
  }
-.textAside, .popStars
+ 
+
+.textAside
 {
+    display: flex;
     justify-content: space-between;
+    flex-direction: column;
 }
 /*.cardAside img */
 /*
@@ -497,12 +525,13 @@ ul, li
     height: 486px;
     background-color: white;
     object-fit: cover;
-    width: 385px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 gray;
     transition: 0.3s;
+    flex: 1;
 }
 .cardAct1 img
 {
@@ -512,10 +541,18 @@ ul, li
     height: 422px;
     border-radius: 20px 20px 0 0;
 }
+
+.cardDouble
+{
+    display: flex;
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+}
 .cardAct60
 {
     background-color: transparent;
-    width: 385px;
+    width: 100%;
     height: 252px;
     margin-bottom: 58px;
    flex-direction: column;
@@ -539,9 +576,9 @@ ul, li
 .cardAct30
 {
     background-color: transparent;
-    width: 385px;
+    width: 100%;
     height: 175px;
-   margin-top: 57px;
+  
     display: flex;
     flex-direction: column;
     box-shadow: 0 4px 8px 0 gray;
@@ -571,12 +608,13 @@ ul, li
     height: 486px;
     background-color: transparent;
     object-fit: cover;
-    width: 385px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     box-shadow: 0 4px 8px 0 gray;
     border-radius: 20px;
     transition: 0.3s;
+    flex: 1;
 }
 .cardAct2 img
 {
@@ -592,16 +630,17 @@ ul, li
 }
 .cardAct50
 {
-    width: 385px;
+    width: 100%;
     height: 208px;
     background-color: transparent;
     display: flex;
     flex-direction: column;
     background-color: transparent;
    border-radius: 20px;
-    margin-bottom: 59px;
+    
     box-shadow: 0 4px 8px 0 gray;
     transition: 0.3s;
+  
 }
 
 .cardAct50 img
@@ -631,6 +670,7 @@ ul, li
     object-fit: cover;
     border-radius: 20px 20px 0 0;
     background-color: transparent;
+    flex: 1;
 }
 .cardAct50Bis:hover
 {
@@ -648,7 +688,10 @@ ul, li
   border-radius: 0 0 20px 20px;
 }
 
-
+.cardsActHover:hover 
+{
+    color: #0065FC;
+}
 
 
 /*.cardActTextmarginBot*/
@@ -675,6 +718,7 @@ ul, li
 {
     display: flex;
     background-color: #F2F2F2;
+    padding-left: 60px;
 }
 .apropos
 {
@@ -686,9 +730,10 @@ ul, li
 }
 h4
 {
-    margin-bottom: 5%;
-    margin-top: 15%;
+    margin-bottom: 25px;
+    margin-top: 60px;
     font-weight: bold;
+    font-size: 20px;
 }
 .nosHebergments
 {
@@ -709,23 +754,22 @@ h4
    justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-    
-    
-    text-decoration: none;
-    margin-bottom: 13%;
+    margin-bottom: 50px;
 }
 .ulFooter li
 {
     justify-content: flex-start;
     align-items: center;
-    height: 40px;
-   
-    width: 100%;
-    text-decoration: none;
+    height: 40px;  
+    width: 100%; 
     text-align: center;
 }
 
-
+li a
+{
+    text-decoration: none;
+    color: black;
+}
 /*LES MEDIA QUERIES*/
 @media screen and (max-width: 1479px)
 
@@ -736,6 +780,20 @@ h4
     }
 }
 
+
+@media screen and (max-width:1010px)
+{
+   .filtres
+   {
+       flex-direction: column;
+       align-items: flex-start;
+       margin-bottom: 15px;
+   } 
+   .textFilterIcons
+   {
+       margin-bottom: 15px;
+   }
+}
 /*
     height: 120px;
     position: relative;
