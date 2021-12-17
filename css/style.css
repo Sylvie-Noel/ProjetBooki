@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
 *
 {
     box-sizing: border-box;
 }
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
 *
 {
     font-family: 'Raleway', sans-serif; /*Peut qu'il faudra préciser quelle police exactement plus tard exemple régular ?*/
@@ -187,6 +188,11 @@ ul, li
     color: white;
     border-radius: 0 10px 10px 0;
     cursor: pointer;
+}
+.buttonSearch2
+{
+   
+    display: none;
 }
 
 
@@ -509,7 +515,7 @@ ul, li
 .cardsActivités
 {
     display: flex;
-    height: 486px;
+   /* height: 486px;*/
    justify-content: flex-start;
    justify-content: space-evenly;
    column-gap: 3%; 
@@ -532,6 +538,7 @@ ul, li
     box-shadow: 0 4px 8px 0 gray;
     transition: 0.3s;
     flex: 1;
+    min-width: 262px;
 }
 .cardAct1 img
 {
@@ -548,6 +555,7 @@ ul, li
     flex: 1;
     width: 100%;
     flex-direction: column;
+    min-width: 262px;
 }
 .cardAct60
 {
@@ -597,11 +605,11 @@ ul, li
 {
     box-shadow: 0 18px 32px 0 gray;
 }
-.cardActBetween
+/*.cardActBetween
 {
    display: flex;
     justify-items: space-between;
-}
+}*/
 
 .cardAct2
 {
@@ -615,6 +623,7 @@ ul, li
     border-radius: 20px;
     transition: 0.3s;
     flex: 1;
+    min-width: 262px;
 }
 .cardAct2 img
 {
@@ -662,6 +671,8 @@ ul, li
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 gray;
     transition: 0.3s;
+    display: flex;
+    flex-direction: column;
 }
 .cardAct50Bis img
 {
@@ -780,9 +791,30 @@ li a
     }
 }
 
+@media screen and (max-width: 1379px)
+
+{
+    .spaceliensaround
+    {
+         min-width: 35%;
+    }
+    .cardsActivités
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .cardAct1, .cardDouble, .cardAct2
+    {
+        max-width: 300px;
+    }
+}
 
 @media screen and (max-width:1010px)
 {
+    .spaceliensaround
+    {
+        width: 45%;
+    }
    .filtres
    {
        flex-direction: column;
@@ -793,6 +825,50 @@ li a
    {
        margin-bottom: 15px;
    }
+}
+@media screen and (max-width:992px)
+{
+    .hébergements
+    {
+        flex-direction: column;
+    }
+  .sizeHebergement
+  {
+      order: 2;
+  }
+  .sizeAsidePop
+  {
+      order: 1;
+  }
+}
+
+@media screen and (max-width:767px)
+{
+    .buttonSearch
+    {
+        display: none;
+    }
+    
+    .buttonSearch2
+    {
+        height: 50px;
+    width: 50px;
+    color: white;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    display: flex;
+    }
+    
+    .borderSearch
+    {
+        width: 330px;
+    }
+    
+    .footer
+    {
+        flex-direction: column;
+    }
+    
 }
 /*
     height: 120px;
