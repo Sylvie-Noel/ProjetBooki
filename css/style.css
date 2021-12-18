@@ -9,3 +9,989 @@
 }
 
 /* Les couleurs qui seront utiliseés bleu (#0065FC), un bleu plus clair bleu (#DEEBFF),*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+*
+{
+    box-sizing: border-box;
+}
+
+*
+{
+    font-family: 'Raleway', sans-serif; /*Peut qu'il faudra préciser quelle police exactement plus tard exemple régular ?*/
+}
+html, body /*rajoute une marge au coté droit et gauche de la page*/
+ {
+     padding: 0;
+ }
+
+/*CLASSES GENERALES*/
+.flexCenter
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spaceBlogolien /* space-betwen */
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.spaceAround
+{
+    display: flex;
+    justify-content: space-around;
+    align-items:flex-start
+}
+
+
+.spaceliensaround  /*sizelien*/
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 25%;  /*tester ce paramètre fonctionne*/
+    text-align: center;
+}
+.marginGlobal
+{
+    margin: 0 58px 0 58px;
+}
+/*.logo, .recherche, .filtres, .info, .hébergements, .activités
+{
+    margin-left: 58px;
+}
+.hébergements, .activités
+{
+    margin-right: 58px;
+}*/
+
+h1, h2, h3, .filterText, .buttonSearch, .afficher
+{
+    font-weight: bold;
+}
+/*CHARTE DE COULEURS*/
+.colorBlue
+{
+    color: #0065FC;
+}
+.colorLightBlue
+{
+    color: #DEEBFF;
+}
+.colorGrey
+{
+    color: #F2F2F2;
+}
+.backColorBlue
+{
+    background-color: #0065FC;
+}
+.backcolorLightBlue
+{
+    background-color: #DEEBFF;
+}
+.backcolorGrey
+{
+    background-color: #F2F2F2;
+}
+
+
+/*NAV*/
+.adecorationone
+{
+    text-decoration: none;  /*Ok*/
+}
+
+.textBold
+{
+    font-weight: bold;
+}
+
+.acolor
+{
+    color: black;
+}
+
+
+
+
+li
+{   
+    background-color: transparent;/*.sizelink{width: 140px;height: 99px;}*/
+    width: 150px; 
+    height: 99px;
+    
+    /*margin: auto;retirépas sur qu'il soit utile */
+    /*Le inlin-block est important car sans ça le text decoration non ne fonctionnerait pas*/ 
+    /* change mon flex pour un inline-block*/
+     /* display: list-item annule l'effet de text décoration: none;*/
+      /*quand le text align center est dans le nax les li se mettent au milieu quand dans li le ils s'affichent au début du ul*/
+}
+
+ul, li
+{
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    Margin: 0px;
+}
+
+.navborder:hover > .acolor
+{
+    
+    color: blue;
+}
+
+.navborder:hover /*rajoute une bordure bleue au survol du lien "Hébergement" et "Activités" aux liens du menu nav*/
+{
+    border-top: 2px solid blue;
+}
+.navborder /*rajoute une bordure transparente au menu au lien de li*/
+{
+    border-top: 1px solid transparent;
+}
+
+
+
+
+
+/* RECHERCHE */
+
+.borderSearch
+{
+    width: 400px;
+    border-radius: 10px; 
+    border: 0.5px solid #F2F2F2;
+}
+
+.borderNone
+{
+    border: none;
+}
+
+
+.paddingSearch
+{
+   padding-left: 20px; 
+}
+
+.searchSize
+{
+    height: 50px;
+    width: 230px; 
+    font-size: 18px;
+    color:black;
+    font-weight: bold; 
+}
+
+
+.iconSize
+{
+    height: 50px;
+    width: 50px;
+    border-radius: 10px 0 0 10px
+}
+
+.buttonSearch
+{
+    height: 50px;
+    width: 120px;
+    color: white;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+}
+.buttonSearch2
+{
+   
+    display: none;
+}
+
+
+/* FILTRES */
+.margeFilter
+{
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.filtres
+{
+    display: flex;
+    align-items: center;
+    
+}
+.filtresWrap
+{
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+
+.margeFilterH3
+{
+    margin-right: 20px;
+    justify-content: center;
+}
+
+.textFilterIcons
+{
+    border: 3px solid #F2F2F2;
+    height: 50px;
+    border-radius: 30px;
+    margin-right: 20px;
+    
+}
+
+.textFilterIcons:hover > .filterText  /* Pour changer d'apparence au survol des filtres */
+{
+    color: #0065FC;
+}
+.textFilterIcons:hover > .filterIcones
+{
+    color: white;
+    background-color:#0065FC;
+}
+
+.filterText
+{
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 0 15px 15px 0;
+}
+.filterIcones
+{
+    border-radius: 25px;
+    width: 52px;
+    height: 52px;
+    margin-left: -2px;
+    color: #0065FC;
+    background-color: #DEEBFF;
+    align-items: center;
+   display: flex;
+}  
+
+.spaceBlogolien i  /* Sans ça la balise i n'est pas en flex */
+{
+    display: flex;
+}
+
+
+/* INFO ET ICONES */
+.info
+{ 
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.parentIcon
+{
+    width: 20px;
+    height: 20px;
+    border: 2px solid #F2F2F2;
+    border-radius: 25px;
+    margin-right: 5px;
+}
+
+
+/* HEBERGEMENT */
+.sizeHebergement
+{
+    flex: 2;            /* En retirant le height du conteneur le aside prend la même hauteur que le hébergement, avant il était plus petit*/
+    margin-right: 20px;
+    border-radius: 10px;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-bottom: 5%;
+    padding-top: 20px;
+}
+.displayFlex
+{
+    display: flex;
+}
+/*.imgHebergement
+{
+    width: 100%;
+    height: 150px;
+    background-color: chartreuse;
+    border-radius: 20px 20px 0 0;
+}*/
+ .card
+ {
+    width: 30%; /*utiliser les pourcentage*/ 
+    height: 215px;
+    margin-bottom: 5%;  /*En mettant auto pour ce paramêtre ça fait l'effet d'un flex around 10% c'est beaucoup trop 1 % léger décalage de 12 px*/
+    background-color: white;
+    border-radius: 20px 20px 20px 20px; 
+    box-shadow: 0 4px 8px 0 gray;
+    transition: 0.3s; 
+ }
+ .card:hover  
+ {
+     box-shadow: 0 18px 32px 0 gray;
+ }
+ .cardImage img
+{
+    height: 133px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+    border: solid 5px white;
+   
+    flex: 2;
+}
+ .card:hover > .cardText
+ {
+    color: #0065FC;
+   /* background-color: #DEEBFF;*/
+    border-radius: 0 0 20px 20px;
+ }
+ 
+.cardText
+{
+    color: black;
+   padding: 2px 16px 2px 16px; 
+    text-align:start;
+    height: 96px;
+    margin: 0;
+    
+    /*display: contents;*/  
+}
+.cardText h3
+{
+    margin: 0;
+}
+.cardText p
+{
+    margin: 2% 0 2% 0;
+}
+.afficher 
+{
+    margin: 0 0 3.5% 0;
+    color: black;
+}
+.objectFit
+ {
+     object-fit: cover; /* Peut avoir comme valeur cover, contain, fill ou scale daown*/
+ }
+ /*.cardflexBhebergement
+ {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     
+ }*/
+
+ .flexwrapHebergement
+ {
+     display: flex;
+     justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 10%;
+    column-gap: 5%;
+ }
+ 
+
+ .afficher p
+ {
+     display: flex;
+    justify-self: flex-start;
+     align-self: flex-start;
+ }
+ 
+
+
+
+ /* LES PLUS POPULAIRES */
+ .sizeAsidePop
+{
+    flex: 1;
+    margin-left: 20px;
+    border-radius: 10px;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    padding-top: 20px;
+    margin-bottom: 5%; 
+}
+.containerAside
+{
+    display: flex;
+    flex-direction: column;
+}
+ .card2  /* il faut impérativment un display block dans les cards*/
+ {
+    width: 100%; /*utiliser les pourcentage*/ 
+    margin: 0;  /*En mettant auto pour ce paramêtre ça fait l'effet d'un flex around 10% c'est beaucoup trop 1 % léger décalage de 12 px*/
+    background-color: cadetblue;
+    border-radius: 20px 20px 20px 20px;
+    display: block;  
+    align-items:center;
+    height: 160px;
+    box-shadow: 0 4px 8px 0 gray;
+    transition: 0.3s;
+ }
+ .card2:hover
+ {
+     box-shadow: 0 18px 32px 0 gray;
+ }
+ .flexCenterPop
+{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.imageAside img
+{
+    height: 160px;
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%;
+    background-color: aqua;
+    border-radius: 20px 0 0 20px;
+    border: solid 5px white;
+    display: inline-block;
+}
+.imageAside
+{
+    height: 170px;
+    object-fit: cover; 
+   width: 40%;
+    flex: 1;
+    /*display: flex;*/
+}
+.marginBotImg12
+{
+    margin-bottom: 10%;
+}
+.textAside
+{
+    width:60%;
+    height: 160px;
+    background-color: white;
+    border-radius: 0 20px 20px 0;
+    flex: 2;
+    padding-left: 2%;
+    color: black;
+}
+.textAside p
+{
+    margin: 0;
+} 
+.card2:hover .textAside
+ {
+    color: #0065FC;
+   /* background-color: #DEEBFF;*/
+    border-radius: 0 20px 20px 0;
+ }
+.textAside h3
+{
+    margin-bottom: 2%;
+}
+.popStars
+ {
+     display: flex;
+     flex: 1;
+     justify-content: flex-start;
+     align-items: flex-end;
+     flex-direction: row;
+     margin-bottom: 20px;
+ }
+ 
+
+.textAside
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+/*.cardAside img */
+/*
+{
+    height: 120px;
+    position: relative;
+    overflow: hidden;
+    
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+    border: solid 5px white;
+    box-shadow: 0 32px 35px 0 color #0065FC;
+    
+}*/
+
+/*ACTIVITES*/
+
+.cardsActivités
+{
+    display: flex;
+   /* height: 486px;*/
+   justify-content: flex-start;
+   justify-content: space-evenly;
+   column-gap: 3%; 
+   margin-bottom: 7%;
+}
+.cardAct1:hover
+{
+    box-shadow: 0 18px 32px 0 gray;
+}
+
+.cardAct1
+{
+    height: 486px;
+    background-color: white;
+    object-fit: cover;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 gray;
+    transition: 0.3s;
+    flex: 1;
+    min-width: 262px;
+}
+.cardAct1 img
+{
+    
+    object-fit: cover;  
+    width: 100%; 
+    height: 422px;
+    border-radius: 20px 20px 0 0;
+}
+
+.cardDouble
+{
+    display: flex;
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+    min-width: 262px;
+}
+.cardAct60
+{
+    background-color: transparent;
+    width: 100%;
+    height: 252px;
+    margin-bottom: 58px;
+   flex-direction: column;
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 gray;
+    transition: 0.3s;
+}
+.cardAct60 img
+{
+    width: 100%;
+    height: 194px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+.cardAct60:hover
+{
+    box-shadow: 0 18px 32px 0 gray;
+}
+
+.cardAct30
+{
+    background-color: transparent;
+    width: 100%;
+    height: 175px;
+  
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 gray;
+    transition: 0.3s;
+  
+    border-radius: 20px;
+}
+.cardAct30 img
+{
+    width: 100%;
+    height: 116px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+.cardAct30:hover
+{
+    box-shadow: 0 18px 32px 0 gray;
+}
+/*.cardActBetween
+{
+   display: flex;
+    justify-items: space-between;
+}*/
+
+.cardAct2
+{
+    height: 486px;
+    background-color: transparent;
+    object-fit: cover;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 gray;
+    border-radius: 20px;
+    transition: 0.3s;
+    flex: 1;
+    min-width: 262px;
+}
+.cardAct2 img
+{
+
+    object-fit: cover;  
+    width: 100%; 
+    height: 422px;
+    border-radius: 20px 20px 0 0;
+}
+.cardAct2:hover
+{
+    box-shadow: 0 18px 32px 0 gray;
+}
+.cardAct50
+{
+    width: 100%;
+    height: 208px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+   border-radius: 20px;
+    
+    box-shadow: 0 4px 8px 0 gray;
+    transition: 0.3s;
+  
+}
+
+.cardAct50 img
+{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+.cardAct50:hover
+{
+    box-shadow: 0 18px 32px 0 gray;
+}
+.cardAct50Bis
+{
+    margin-top: 60px;
+    box-shadow: 0 4px 8px 0 gray;
+    transition: 0.3s;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 gray;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+.cardAct50Bis img
+{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+    background-color: transparent;
+    flex: 1;
+}
+.cardAct50Bis:hover
+{
+    box-shadow: 0 18px 32px 0 gray;
+}
+.cardActText
+{
+    width: 100%;
+    height: 63px;
+    margin: 0;
+    padding-left: 25px;
+    background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0 0 20px 20px;
+}
+
+.cardsActHover:hover 
+{
+    color: #0065FC;
+}
+
+
+/*.cardActTextmarginBot*/
+
+/*.cardImage img
+{
+    height: 120px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+    border: solid 5px white;
+    box-shadow: 0 32px 35px 0 color #0065FC;
+    flex: 2;
+}*/
+
+
+
+
+/* PARTIE FOOTER */
+
+.footer
+{
+    display: flex;
+    background-color: #F2F2F2;
+    padding-left: 60px;
+}
+.apropos
+{
+    
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-bottom: 0;
+}
+h4
+{
+    margin-bottom: 25px;
+    margin-top: 60px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.nosHebergments
+{
+   
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.assistance
+{
+    flex-direction: column;
+    display: flex;
+    flex: 1;
+}
+.ulFooter
+{
+    padding-left: 0;
+   justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.ulFooter li
+{
+    justify-content: flex-start;
+    align-items: center;
+    height: 40px;  
+    width: 100%; 
+    text-align: center;
+}
+
+li a
+{
+    text-decoration: none;
+    color: black;
+}
+/*LES MEDIA QUERIES*/
+@media screen and (max-width: 1479px)
+
+{
+    .card/*Pour que la taille des image "Hébergement" fassent 246px de width*/
+    {
+         width: 246px;
+    }
+}
+
+@media screen and (max-width: 1379px)
+
+{
+    .spaceliensaround
+    {
+         min-width: 35%;
+    }
+    .cardsActivités
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .cardAct1, .cardDouble, .cardAct2
+    {
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width:1010px)
+{
+    .spaceliensaround
+    {
+        width: 45%;
+    }
+   .filtres
+   {
+       flex-direction: column;
+       align-items: flex-start;
+       margin-bottom: 15px;
+   } 
+   .textFilterIcons
+   {
+       margin-bottom: 15px;
+   }
+}
+@media screen and (max-width:992px)
+{
+    .hébergements
+    {
+        flex-direction: column;
+    }
+  .sizeHebergement
+  {
+      order: 2;
+      margin-right: 0;
+  }
+  .sizeAsidePop
+  {
+      order: 1;
+      margin-left: 0;
+  }
+  .cardAct1
+    {
+        margin-bottom: 58px;
+    }
+    .cardAct30
+    {
+        margin-bottom: 58px;
+    }
+}
+
+@media screen and (max-width:767px)
+{
+    .nav
+    {
+        flex-direction: column;
+    }
+    .spaceliensaround
+    {
+        width: 100%;
+    }
+    .navborder
+    {
+        width: 50%;
+    }
+    .navborder:hover /*rajoute une bordure bleue au survol du lien "Hébergement" et "Activités" aux liens du menu nav*/
+    {
+        border-bottom: 2px solid blue;
+        border-top: none;
+    }
+    ul
+    {
+        padding-left: 0;
+    }
+.h1p
+{
+    margin-bottom: 35px;
+}
+    .marginGlobal
+    {
+        margin: 30px 0 0 0;
+        
+    }
+    .recherche, .filtres, .info
+    {
+        padding-left: 20px;
+        
+    }
+    .buttonSearch
+    {
+        display: none;
+    }
+    .info
+    {
+        align-items: center;
+    }
+    .buttonSearch2
+    {
+        height: 50px;
+    width: 50px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    }
+    
+    .borderSearch
+    {
+        width: 330px;
+    }
+    .sizeHebergement
+    {
+        background-color: transparent;
+        margin-right: 0;
+        padding: 0 20px 0 20px;
+    }
+    .card
+    {
+        min-width: 246px;
+        width: 100%;
+        height: auto;
+    }
+    .sizeAsidePop
+    {
+        margin-left: 0;
+        border-radius: 0%;
+        padding: 0 20px 0 20px;
+    }
+    .activités
+    {
+        padding: 0 20px 0 20px;
+        flex-direction: column;
+    }
+    .cardsActivités
+    {
+        flex-direction: column; 
+    }
+    .cardAct1, .cardAct2, .cardDouble
+    {
+        max-width: none;
+        height: 242px;
+    }
+    .cardAct1 img, .cardAct2 img, .cardDouble img
+    {
+        height: 180px;
+    }
+    .cardAct1, .cardAct2, .cardAct30, .cardAct50, .cardAct60
+    {
+        margin-bottom: 25px;
+        
+    }
+    .cardAct30, .cardAct50
+    {
+        height: auto;
+    }
+   .cardAct50Bis
+   {
+       margin-top: 0;
+   }
+    .footer
+    {
+        flex-direction: column;
+        padding-left: 20px;
+        padding-bottom: 58px;
+    }
+    .ulFooter
+    {
+        margin-bottom: 0;
+    }
+}
+/*
+    height: 120px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+    border: solid 5px white;
+    box-shadow: 0 32px 35px 0 color #0065FC;*/
