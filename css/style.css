@@ -846,19 +846,59 @@ li a
       order: 1;
       margin-left: 0;
   }
+  .cardAct1
+    {
+        margin-bottom: 58px;
+    }
+    .cardAct30
+    {
+        margin-bottom: 58px;
+    }
 }
 
 @media screen and (max-width:767px)
 {
+    .nav
+    {
+        flex-direction: column;
+    }
+    .spaceliensaround
+    {
+        width: 100%;
+    }
+    .navborder
+    {
+        width: 50%;
+    }
+    .navborder:hover /*rajoute une bordure bleue au survol du lien "Hébergement" et "Activités" aux liens du menu nav*/
+{
+    border-bottom: 2px solid blue;
+    border-top: none;
+}
+
+    ul
+    {
+        padding-left: 0;
+    }
+
     .marginGlobal
     {
         margin: 0;
+        
+    }
+    .recherche, .filtres, .info
+    {
+        padding-left: 20px;
+        
     }
     .buttonSearch
     {
         display: none;
     }
-    
+    .info
+    {
+        align-items: center;
+    }
     .buttonSearch2
     {
         height: 50px;
@@ -893,7 +933,34 @@ li a
     .activités
     {
         padding: 0 20px 0 20px;
+        flex-direction: column;
     }
+    .cardsActivités
+    {
+        flex-direction: column; 
+    }
+    .cardAct1, .cardAct2, .cardDouble
+    {
+        max-width: none;
+        height: 242px;
+    }
+    .cardAct1 img, .cardAct2 img, .cardDouble img
+    {
+        height: 180px;
+    }
+    .cardAct1, .cardAct2, .cardAct30, .cardAct50, .cardAct60
+    {
+        margin-bottom: 25px;
+        
+    }
+    .cardAct30, .cardAct50
+    {
+        height: auto;
+    }
+   .cardAct50Bis
+   {
+       margin-top: 0;
+   }
     .footer
     {
         flex-direction: column;
