@@ -871,19 +871,21 @@ li a
         width: 50%;
     }
     .navborder:hover /*rajoute une bordure bleue au survol du lien "Hébergement" et "Activités" aux liens du menu nav*/
-{
-    border-bottom: 2px solid blue;
-    border-top: none;
-}
-
+    {
+        border-bottom: 2px solid blue;
+        border-top: none;
+    }
     ul
     {
         padding-left: 0;
     }
-
+.h1p
+{
+    margin-bottom: 35px;
+}
     .marginGlobal
     {
-        margin: 0;
+        margin: 30px 0 0 0;
         
     }
     .recherche, .filtres, .info
@@ -904,7 +906,7 @@ li a
         height: 50px;
     width: 50px;
     color: white;
-    border-radius: 0 10px 10px 0;
+    border-radius: 10px;
     cursor: pointer;
     display: flex;
     }
@@ -923,6 +925,7 @@ li a
     {
         min-width: 246px;
         width: 100%;
+        height: auto;
     }
     .sizeAsidePop
     {
@@ -964,8 +967,13 @@ li a
     .footer
     {
         flex-direction: column;
+        padding-left: 20px;
+        padding-bottom: 58px;
     }
-    
+    .ulFooter
+    {
+        margin-bottom: 0;
+    }
 }
 /*
     height: 120px;
