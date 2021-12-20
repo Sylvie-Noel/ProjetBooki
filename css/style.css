@@ -277,8 +277,12 @@ ul, li
 .info
 { 
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 30px;
+}
+.infoText p
+{
+    margin-top: 2px;
 }
 .parentIcon
 {
@@ -900,10 +904,7 @@ li a
     {
         display: none;
     }
-    .info
-    {
-        align-items: center;
-    }
+    
     .buttonSearch2
     {
         height: 50px;
