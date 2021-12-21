@@ -60,6 +60,7 @@ html, body /*rajoute une marge au coté droit et gauche de la page*/
 h1, h2, h3, .filterText, .buttonSearch, .afficher
 {
     font-weight: bold;
+    font-size: 17px;
 }
 /*CHARTE DE COULEURS*/
 .colorBlue
@@ -806,6 +807,10 @@ li a
     {
          min-width: 35%;
     }
+    h3
+    {
+        font-size: 16px;
+    }
     .cardsActivités
     {
         display: flex;
@@ -834,6 +839,8 @@ li a
        margin-bottom: 15px;
    }
 }
+@media screen and (min-width:992px)
+
 @media screen and (max-width:991px)
 {
     .hébergements
@@ -926,15 +933,21 @@ li a
     {
         width: 330px;
     }
+    .hébergements
+    {
+        flex-direction: column;
+    }
     .sizeHebergement
     {
         background-color: transparent;
         margin-right: 0;
         padding: 0 20px 0 20px;
+        order: 2;
     }
     .card
     {
-        min-width: 246px;
+        min-width: none
+        ;
         width: 100%;
         height: auto;
     }
@@ -943,6 +956,7 @@ li a
         margin-left: 0;
         border-radius: 0%;
         padding: 0 20px 0 20px;
+        order: 1;
     }
     .activités
     {
