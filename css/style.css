@@ -63,6 +63,7 @@ html, body /*rajoute une marge au coté droit et gauche de la page*/
 h1, h2, h3, .filterText, .buttonSearch, .afficher
 {
     font-weight: bold;
+    font-size: 17px;
 }
 /*CHARTE DE COULEURS*/
 .colorBlue
@@ -300,8 +301,7 @@ ul, li
     flex: 2;            /* En retirant le height du conteneur le aside prend la même hauteur que le hébergement, avant il était plus petit*/
     margin-right: 20px;
     border-radius: 10px;
-    padding-left: 2%;
-    padding-right: 2%;
+   padding: 0 40px;
     margin-bottom: 5%;
     padding-top: 20px;
 }
@@ -318,7 +318,8 @@ ul, li
 }*/
  .card
  {
-    width: 30%; /*utiliser les pourcentage*/ 
+    min-width: 30%; /*utiliser les pourcentage*/ 
+    max-width: 30%;
     height: 215px;
     margin-bottom: 5%;  /*En mettant auto pour ce paramêtre ça fait l'effet d'un flex around 10% c'est beaucoup trop 1 % léger décalage de 12 px*/
     background-color: white;
@@ -793,21 +794,34 @@ li a
     color: black;
 }
 /*LES MEDIA QUERIES*/
-@media screen and (max-width: 1479px)
+@media screen and (max-width: 1479px) and (min-width:1349px)
 
 {
     .card/*Pour que la taille des image "Hébergement" fassent 246px de width*/
     {
-         width: 246px;
+        min-width: 220px;
+        max-width: 30%;
     }
 }
-
+@media screen and (max-width: 1403px)
+{
+    .card
+    {
+        min-width:47%;
+        max-width: 48%;
+        justify-content: space-between;
+    }
+}
 @media screen and (max-width: 1379px)
 
 {
     .spaceliensaround
     {
          min-width: 35%;
+    }
+    h3
+    {
+        font-size: 16px;
     }
     .cardsActivités
     {
@@ -818,9 +832,11 @@ li a
     {
         max-width: 300px;
     }
+   
 }
 
-@media screen and (max-width:1010px)
+
+@media screen and (max-width:1010px) and (min-width:992px)
 {
     .spaceliensaround
     {
@@ -836,17 +852,36 @@ li a
    {
        margin-bottom: 15px;
    }
+   h3
+    {
+        font-size: 15px;
+    }
+    
 }
-@media screen and (max-width:991px)
+/*@media screen and (min-width:992px)*/
+
+@media screen and (max-width:991px) and (min-width:768px)
 {
     .hébergements
     {
         flex-direction: column;
+        
+    }
+    h3
+    {
+        font-size: 15px;
     }
   .sizeHebergement
   {
       order: 2;
       margin-right: 0;
+      padding: 0 40px;
+      column-gap: 0;
+  }
+  .card
+  {
+      min-width: 47%;
+      max-width: 48%;
   }
   .sizeAsidePop
   {
@@ -929,16 +964,20 @@ li a
     {
         width: 330px;
     }
+    .hébergements
+    {
+        flex-direction: column;
+    }
     .sizeHebergement
     {
         background-color: transparent;
         margin-right: 0;
         padding: 0 20px 0 20px;
+        order: 2;
     }
     .card
     {
-        min-width: 246px;
-        width: 100%;
+        min-width: 100%;
         height: auto;
     }
     .sizeAsidePop
@@ -946,6 +985,7 @@ li a
         margin-left: 0;
         border-radius: 0%;
         padding: 0 20px 0 20px;
+        order: 1;
     }
     .activités
     {
