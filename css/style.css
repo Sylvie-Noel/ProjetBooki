@@ -850,6 +850,11 @@ li a
       order: 1;
       margin-left: 0;
   }
+  .cardsActivités
+  {
+      justify-content: space-between;
+      column-gap: normal;
+  }
   .cardAct1
     {
         margin-bottom: 58px;
