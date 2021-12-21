@@ -834,7 +834,7 @@ li a
        margin-bottom: 15px;
    }
 }
-@media screen and (max-width:992px)
+@media screen and (max-width:991px)
 {
     .hébergements
     {
@@ -855,6 +855,11 @@ li a
       justify-content: space-between;
       column-gap: normal;
   }
+  .cardAct1, .cardDouble, .cardAct2
+    {
+        min-width: 45%;
+        max-width: 46%;
+    }
   .cardAct1
     {
         margin-bottom: 58px;
