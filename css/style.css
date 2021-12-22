@@ -557,7 +557,7 @@ ul, li
     
     object-fit: cover;  
     width: 100%; 
-    height: 422px;
+    height: 423px;
     border-radius: 20px 20px 0 0;
 }
 
@@ -572,8 +572,8 @@ ul, li
 {
     background-color: transparent;
     width: 100%;
-    height: 252px;
-    margin-bottom: 58px;
+    height: 290px;
+    margin-bottom: 52px;
    flex-direction: column;
     display: flex;
     border-radius: 20px;
@@ -583,7 +583,7 @@ ul, li
 .cardAct60 img
 {
     width: 100%;
-    height: 194px;
+    height: 227px;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
@@ -596,7 +596,7 @@ ul, li
 {
     background-color: transparent;
     width: 100%;
-    height: 175px;
+    height: 145px;
   
     display: flex;
     flex-direction: column;
@@ -608,7 +608,7 @@ ul, li
 .cardAct30 img
 {
     width: 100%;
-    height: 116px;
+    height: 82px;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
@@ -833,7 +833,13 @@ li a
     }*/
    
 }
-
+@media screen and (max-width:1100px)
+{
+    h3
+    {
+        font-size: 14px;
+    }
+}
 
 @media screen and (max-width:1010px) and (min-width:992px)
 {
@@ -851,10 +857,7 @@ li a
    {
        margin-bottom: 15px;
    }
-   h3
-    {
-        font-size: 14px;
-    }
+  
     
 }
 /*@media screen and (min-width:992px)*/
@@ -868,7 +871,7 @@ li a
     }
     h3
     {
-        font-size: 15px;
+        font-size: 17px;
     }
   .sizeHebergement
   {
