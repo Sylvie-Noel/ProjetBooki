@@ -161,12 +161,12 @@ ul, li
     display: flex;
     border: 0.5px solid #F2F2F2;
     width: 400px;
-    border-radius: 10px; 
+    border-radius: 15px; 
 }
 .borderSearch
 {
     /*width: 400px; emp^che les éléments de se coller*/
-    border-radius: 10px; 
+    border-radius: 15px; 
     
 
 }
@@ -196,7 +196,7 @@ ul, li
 {
     height: 50px;
     width: 50px;
-    border-radius: 10px 0 0 10px
+    border-radius: 15px 0 0 15px
 }
 
 .buttonSearch
@@ -204,12 +204,12 @@ ul, li
     height: 50px;
     width: 120px;
     color: white;
-    border-radius: 0 10px 10px 0;
+    border-radius: 0 15px 15px 0;
     cursor: pointer;
 }
 .buttonSearch2
 {
-   
+    border-radius: 15px;
     display: none;
 }
 
@@ -958,6 +958,10 @@ li a
     {
         flex-direction: column;
     }
+    .navborder
+    {
+        border-bottom: 3px solid #F2F2F2;
+    }
     .spaceliensaround
     {
         width: 100%;
@@ -1007,7 +1011,7 @@ li a
         height: 50px;
     width: 50px;
     color: white;
-    border-radius: 10px;
+    border-radius: 15px;
     cursor: pointer;
     display: flex;
     }
