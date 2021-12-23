@@ -873,7 +873,23 @@ li a
     }
    
 }
-
+@media screen and (max-width:1068px) 
+{
+    .filtres
+   {
+       flex-direction: column;
+       align-items: flex-start;
+       margin-bottom: 15px;
+   } 
+    .margeFilterH3
+    {
+        align-self: flex-start;
+    } 
+    .textFilterIcons
+    {
+        margin-bottom: 15px;
+    }
+}
 
 @media screen and (max-width:1010px) and (min-width:992px)
 {
@@ -881,16 +897,8 @@ li a
     {
         width: 45%;
     }
-   .filtres
-   {
-       flex-direction: column;
-       align-items: flex-start;
-       margin-bottom: 15px;
-   } 
-   .textFilterIcons
-   {
-       margin-bottom: 15px;
-   }
+   
+  
 
     
 }
