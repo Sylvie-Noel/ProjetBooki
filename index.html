@@ -43,6 +43,7 @@
             <div class="borderSearch flexCenter">
                 <div class="backcolorGrey flexCenter iconSize">
                     <i class="fas fa-map-marker-alt"></i>
+                </div>
             </div>
             
             <div>
@@ -211,8 +212,9 @@
                         <i class="fas fa-chart-line"></i>
                    </div>
                     <div class="containerAside">
+                        <a class="adecorationone acolor flexRowAside" href="#">
                         <div class="flexCenterPop marginBotImg12 card2">
-                            <a class="adecorationone acolor flexRowAside" href="#">
+                            
                                 <div class="imageAside "><img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hotel du soleil du matin"></div>
                                 <div class="textAside">
                                     <div>
@@ -225,15 +227,13 @@
                                         <i class="fas fa-star colorBlue"></i>
                                         <i class="fas fa-star colorBlue"></i>
                                         <i class="fas fa-star colorBlue"></i>
-                                    </div>
-                                </a>
+                                    </div>                               
                                 </div>
-                            
+                           
                         </div>
-                    
+                    </a>
+                        <a class="adecorationone acolor flexRowAside" href="#">
                         <div class="flexCenterPop card2 marginBotImg12">
-
-                            <a class="adecorationone acolor flexRowAside" href="#">
                                 <div class="imageAside "><img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau Chambre d'hôte"></div>
                                 <div class="textAside">
                                     <h3>Au coeur de l'eau chambre d'hôte</h3>
@@ -245,15 +245,15 @@
                                         <i class="fas fa-star colorBlue"></i>
                                         <i class="fas fa-star colorGrey"></i>
                                     </div>
-                                    </a>
+                               
                                 </div>
                             
                         </div>
-
+                    </a>
+                    <a class="adecorationone acolor flexRowAside" href="#">
                         <div class="flexCenterPop card2 marginBotImg12">
-                            <a class="adecorationone acolor flexRowAside" href="#">
-                                <div class="imageAside"><img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et Blanc"></div>
                             
+                                <div class="imageAside"><img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et Blanc"></div>
                                 <div class="textAside">
                                     <h3>Au coeur de l'eau Chambre d'hôte</h3>
                                     <p>Nuit à partir de 68euros</p>
@@ -264,11 +264,11 @@
                                         <i class="fas fa-star colorBlue"></i>
                                         <i class="fas fa-star colorGrey"></i>
                                     </div>
-                                    </a>
-                                </div>
-                                   
+                                </div>    
                         </div>
+                    </a>
                     </div>
+                    
             </aside>
         </div>
             
@@ -277,48 +277,56 @@
     <div class="activités">
     <h2 id="Activités">Activités à Marseille</h2>
             <section class="cardsActivités">
-                <a class="adecorationone acolor lienActFlexColumn" href="#">
-                    <div class="cardsActHover cardAct1"><img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
-                    <div class="cardActText"><h3 >Vieux Port</h3></div>
-                </a>
-                    </div>
+                <div class="cardAct1">
+                    <a class="adecorationone acolor " href="#">
+                        <div class="cardsActHover "><img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
+                        <div class="cardActText"><h3 >Vieux Port</h3></div>                    
+                        </div>
+                    </a>
+                </div>
                 
                 <div class="cardDouble">
-                    <a class="adecorationone acolor lienActFlexColumn" href="#">
-                        <div class="cardsActHover cardAct60">
-                            <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
-
-                        <div class="cardActText"><h3>Fort de Pomègues</h3></div>
-                    </a>
+                    <div class="cardsActHover cardAct60"> <!--Sans cette div bug graphique car le a doit être à l'intérieur-->
+                        <a class="adecorationone acolor lienActFlexColumn" href="#">
+                            <div class="cardsActHover cardAct60"> <!--En laissant de cardAct60 ici l'effet de carte est plus marqué à voir-->
+                                <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
+                            <div class="cardActText"><h3>Fort de Pomègues</h3></div>                    
+                            </div>
+                        </a>
                     </div>
-                    <a class="adecorationone acolor lienActFlexColumn" href="#">
+                    
+                    <div class="cardsActHover cardAct30">
+                        <a class="adecorationone acolor lienActFlexColumn" href="#">
                         <div class="cardsActHover cardAct30">
                             <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul">
-
-                        <div class="cardActText"><h3>Îles du Frioul</h3></div>
-                    </a>
+                        <div class="cardActText"><h3>Îles du Frioul</h3></div>      
+                    </div> 
+                     </a>
+                    </div>
+                </div>
+                <div class="cardsActHover cardAct2">
+                    <a class="adecorationone acolor lienActFlexColumn" href="#">
+                        <div class="cardsActHover "><img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc des Calanques">
+                        <div class="cardActText"><h3>Parc des Calanques</h3></div>                    
                         </div>
+                    </a>
                 </div>
-
-                <a class="adecorationone acolor lienActFlexColumn" href="#">
-                    <div class="cardsActHover cardAct2"><img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc des Calanques">
-                    <div class="cardActText"><h3>Parc des Calanques</h3></div>
-                </a>
-                </div>
-
                 <div class="cardDouble">
                     <a class="adecorationone acolor lienActFlexColumn" href="#">
                         <div class="cardsActHover cardAct50">
                             <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
-                        <div class="cardActText"><h3>Notre-Dame-de-la-Gard</h3></div>
-                    </a>
+                        <div class="cardActText"><h3>Notre-Dame-de-la-Gard</h3></div> 
                     </div>
-                    <a class="adecorationone acolor lienActFlexColumn" href="#">
-                        <div class="cardsActHover cardAct50Bis">
-                            <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
-                        <div class="cardActText"><h3>Parc Longchamp</h3></div>
                     </a>
-                </div>
+            
+                    <div class="cardsActHover cardAct50Bis">
+                        <a class="adecorationone acolor lienActFlexColumn" href="#">
+                            <div class="cardsActHover">
+                                <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
+                            <div class="cardActText"><h3>Parc Longchamp</h3></div>                   
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </section>
         </div> 
