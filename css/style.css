@@ -153,12 +153,19 @@ ul, li
 
 
 /* RECHERCHE */
-
-.borderSearch
+.containerRecherche
 {
+    display: flex;
+    border: 0.5px solid #F2F2F2;
     width: 400px;
     border-radius: 10px; 
-    border: 0.5px solid #F2F2F2;
+}
+.borderSearch
+{
+    /*width: 400px; emp^che les éléments de se coller*/
+    border-radius: 10px; 
+    
+
 }
 
 .borderNone
@@ -948,10 +955,12 @@ li a
     {
         padding-left: 0;
     }
-.h1p
-{
-    margin-bottom: 35px;
-}
+    .h1p
+    {
+        margin-bottom: 35px;
+    }   
+   
+
     .marginGlobal
     {
         margin: 30px 0 0 0;
@@ -961,7 +970,13 @@ li a
     {
         padding-left: 20px;
         
+    } .containerRecherche
+    {
+        display: flex;
+        border: 0.5px solid #F2F2F2;
+        width: 332px;
     }
+
     .buttonSearch
     {
         display: none;
@@ -977,10 +992,6 @@ li a
     display: flex;
     }
     
-    .borderSearch
-    {
-        width: 330px;
-    }
     .hébergements
     {
         flex-direction: column;
