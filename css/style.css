@@ -1038,9 +1038,9 @@ li a
         margin-bottom: 25px;
         
     }
-    .cardAct30, .cardAct50
+    .cardAct30, .cardAct50, .cardAct50Bis, .cardAct60
     {
-        height: auto;
+        height: 242px;
     }
    .cardAct50Bis
    {
