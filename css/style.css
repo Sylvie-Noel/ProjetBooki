@@ -974,7 +974,7 @@ li a
     {
         display: flex;
         border: 0.5px solid #F2F2F2;
-        width: 332px;
+        width: 330px;
     }
 
     .buttonSearch
@@ -1038,9 +1038,9 @@ li a
         margin-bottom: 25px;
         
     }
-    .cardAct30, .cardAct50
+    .cardAct30, .cardAct50, .cardAct50Bis, .cardAct60
     {
-        height: auto;
+        height: 242px;
     }
    .cardAct50Bis
    {
