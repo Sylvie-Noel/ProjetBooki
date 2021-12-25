@@ -44,7 +44,6 @@ html, body /*rajoute une marge au coté droit et gauche de la page*/
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 25%;  /*tester ce paramètre fonctionne*/
     text-align: center;
 }
 .marginGlobal
@@ -161,6 +160,7 @@ ul, li
 .navborder /*rajoute une bordure transparente au menu au lien de li*/
 {
     border-top: 1px solid transparent;
+    margin: 0 0 0 10px;
 }
 
 
@@ -846,10 +846,10 @@ li a
 }
 @media screen and (max-width: 1379px)
 {
-    .spaceliensaround
+    /*.spaceliensaround
     {
          min-width: 35%;
-    }
+    }*/
     .cardText p
     {
         font-size: 15px;
@@ -904,10 +904,10 @@ li a
 
 @media screen and (max-width:1010px) and (min-width:992px)
 {
-    .spaceliensaround
+    /*.spaceliensaround
     {
         width: 45%;
-    }
+    }*/
    
   
 
@@ -980,6 +980,7 @@ li a
     .navborder
     {
         width: 50%;
+        margin: 0;
     }
     .navborder:hover /*rajoute une bordure bleue au survol du lien "Hébergement" et "Activités" aux liens du menu nav*/
     {
@@ -1090,6 +1091,10 @@ li a
     .ulFooter
     {
         margin-bottom: 0;
+    }
+    .nosHebergments, .assistance
+    {
+        margin-left: 0;
     }
 }
 /*
