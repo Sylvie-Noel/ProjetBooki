@@ -44,7 +44,6 @@ html, body /*rajoute une marge au coté droit et gauche de la page*/
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 25%;  /*tester ce paramètre fonctionne*/
     text-align: center;
 }
 .marginGlobal
@@ -161,6 +160,7 @@ ul, li
 .navborder /*rajoute une bordure transparente au menu au lien de li*/
 {
     border-top: 1px solid transparent;
+    margin: 0 0 0 10px;
 }
 
 
@@ -328,9 +328,9 @@ ul, li
     flex: 2;            /* En retirant le height du conteneur le aside prend la même hauteur que le hébergement, avant il était plus petit*/
     margin-right: 20px;
     border-radius: 10px;
-   padding: 0 40px;
+    padding: 30px 40px 0 40px;
     margin-bottom: 5%;
-    padding-top: 20px;
+    
 }
 .displayFlex
 {
@@ -438,10 +438,7 @@ ul, li
     flex: 1;
     margin-left: 20px;
     border-radius: 10px;
-    padding-left: 2%;
-    padding-right: 2%;
-    padding-bottom: 2%;
-    padding-top: 20px;
+    padding: 30px 40px 0 40px;
     margin-bottom: 5%; 
 }
 .containerAside
@@ -780,7 +777,7 @@ ul, li
     
     display: flex;
     flex-direction: column;
-    flex: 1;
+    flex: 1.09;
     margin-bottom: 0;
 }
 h4
@@ -795,13 +792,15 @@ h4
    
     display: flex;
     flex-direction: column;
-    flex: 1;
+    flex: 0.9;
+    margin-left: 45px;
 }
 .assistance
 {
     flex-direction: column;
     display: flex;
-    flex: 1;
+    flex: 0.9;
+    margin-left: 6.3%;
 }
 .ulFooter
 {
@@ -847,10 +846,10 @@ li a
 }
 @media screen and (max-width: 1379px)
 {
-    .spaceliensaround
+    /*.spaceliensaround
     {
          min-width: 35%;
-    }
+    }*/
     .cardText p
     {
         font-size: 15px;
@@ -905,10 +904,10 @@ li a
 
 @media screen and (max-width:1010px) and (min-width:992px)
 {
-    .spaceliensaround
+    /*.spaceliensaround
     {
         width: 45%;
-    }
+    }*/
    
   
 
@@ -981,6 +980,7 @@ li a
     .navborder
     {
         width: 50%;
+        margin: 0;
     }
     .navborder:hover /*rajoute une bordure bleue au survol du lien "Hébergement" et "Activités" aux liens du menu nav*/
     {
@@ -1091,6 +1091,10 @@ li a
     .ulFooter
     {
         margin-bottom: 0;
+    }
+    .nosHebergments, .assistance
+    {
+        margin-left: 0;
     }
 }
 /*
