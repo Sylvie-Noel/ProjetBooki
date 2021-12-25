@@ -777,7 +777,7 @@ ul, li
     
     display: flex;
     flex-direction: column;
-    flex: 1;
+    flex: 1.09;
     margin-bottom: 0;
 }
 h4
@@ -792,13 +792,15 @@ h4
    
     display: flex;
     flex-direction: column;
-    flex: 1;
+    flex: 0.9;
+    margin-left: 45px;
 }
 .assistance
 {
     flex-direction: column;
     display: flex;
-    flex: 1;
+    flex: 0.9;
+    margin-left: 6.3%;
 }
 .ulFooter
 {
