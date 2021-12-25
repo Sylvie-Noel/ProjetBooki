@@ -61,12 +61,24 @@ html, body /*rajoute une marge au coté droit et gauche de la page*/
 }*/
 h1 /*le CCS normalize emp^che la modofocation de la taille de police*/
 {
-    font-size: 19px;
+    font-size: 21px;
 }
-h1, h2, h3, .filterText, .buttonSearch, .afficher
+h2
+{
+    font-size: 17px;
+}
+h3
+{
+    font-size: 14px;
+}
+h2, h3, .filterText, .buttonSearch, .afficher
 {
     font-weight: bold;
-    font-size: 17px;
+    
+}
+p
+{
+    font-size: 14px; 
 }
 /*CHARTE DE COULEURS*/
 .colorBlue
@@ -473,9 +485,7 @@ ul, li
 .imageAside
 {
     height: 170px;
-    object-fit: cover; 
-   width: 40%;
-    flex: 1;
+    width: 40%;
     /*display: flex;*/
 }
 .marginBotImg12
@@ -828,10 +838,7 @@ li a
         max-width: 48%;*/
         justify-content: space-between;
     }
-    h3
-    {
-        font-size: 16px;
-    }
+   
 }
 @media screen and (max-width: 1379px)
 {
