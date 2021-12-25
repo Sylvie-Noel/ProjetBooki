@@ -328,9 +328,9 @@ ul, li
     flex: 2;            /* En retirant le height du conteneur le aside prend la même hauteur que le hébergement, avant il était plus petit*/
     margin-right: 20px;
     border-radius: 10px;
-   padding: 0 40px;
+    padding: 30px 40px 0 40px;
     margin-bottom: 5%;
-    padding-top: 20px;
+    
 }
 .displayFlex
 {
@@ -438,10 +438,7 @@ ul, li
     flex: 1;
     margin-left: 20px;
     border-radius: 10px;
-    padding-left: 2%;
-    padding-right: 2%;
-    padding-bottom: 2%;
-    padding-top: 20px;
+    padding: 30px 40px 0 40px;
     margin-bottom: 5%; 
 }
 .containerAside
