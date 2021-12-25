@@ -303,6 +303,11 @@ ul, li
     align-items: flex-start;
     margin-bottom: 30px;
 }
+.infoText
+{
+    min-width: 70%;
+    max-width: 80%;
+}
 .infoText p
 {
     margin-top: 2px;
