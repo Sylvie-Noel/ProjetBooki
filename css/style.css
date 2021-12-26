@@ -370,7 +370,7 @@ ul, li
    
     flex: 2;
 }
- .card:hover > .cardText
+ .card:hover .cardText
  {
     color: #0065FC;
    /* background-color: #DEEBFF;*/
