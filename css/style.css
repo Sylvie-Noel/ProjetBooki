@@ -926,7 +926,10 @@ li a
     {
         margin-bottom: 15px;
     }
-    
+    .cardText
+    {
+         padding: 0 3.8% 0 3.8% ;
+    }
     
 }
 
@@ -943,10 +946,7 @@ li a
         min-width: 30.5%;
         max-width: 30.7%;
     }
-   .cardText
-   {
-        padding: 0 3.8% 0 3.8% ;
-   }
+  
   
 
     
