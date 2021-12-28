@@ -752,17 +752,20 @@ i
 }
 .cardActText
 {
-   /* width: 100%;*/
     height: 63px;
-    margin: 0;
     padding-left: 25px;
     background-color: white;
     display: flex;
     flex-direction: column;
     border-radius: 0 0 20px 20px;
 }
+.cardActText h3
+{
+    margin-top: auto; /*Permet de centrer le texte automatiquement quelquesoit la taille de la police en hauteur*/
+    margin-bottom: auto;
+}
 
-.cardsActHover:hover 
+.cardsActHover:hover /*Ajoute une couleur bleue au survol des cartes Activités"*/
 {
     color: #0065FC;
 }
