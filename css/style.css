@@ -13,8 +13,6 @@ html, body
      padding: 0;
  }
 
-/* Les couleurs qui seront utiliseés bleu (#0065FC), un bleu plus clair bleu (#DEEBFF),*/
-
 
 /*CLASSES GENERALES*/
 .flexCenter
@@ -79,6 +77,8 @@ span
 {
     font-weight: bold;
 }
+
+
 /*CHARTE DE COULEURS*/
 .colorBlue
 {
@@ -127,15 +127,9 @@ span
 
 li
 {   
-    background-color: transparent;/*.sizelink{width: 140px;height: 99px;}*/
+    background-color: transparent;/*Width et height pour donner une hauteur et une largeur au conteneur li*/
     width: 150px; 
     height: 99px;
-    
-    /*margin: auto;retirépas sur qu'il soit utile */
-    /*Le inlin-block est important car sans ça le text decoration non ne fonctionnerait pas*/ 
-    /* change mon flex pour un inline-block*/
-     /* display: list-item annule l'effet de text décoration: none;*/
-      /*quand le text align center est dans le nax les li se mettent au milieu quand dans li le ils s'affichent au début du ul*/
 }
 
 ul, li
