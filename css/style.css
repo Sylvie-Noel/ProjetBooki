@@ -356,7 +356,7 @@ ul, li
    
     flex: 2;
 }
- .card:hover .cardText
+ .card:hover .cardText /*Ajoute une couleur bleue au survol du texte de card qui est placé dans une div différente*/
  {
     color: #0065FC;
     border-radius: 0 0 20px 20px;
@@ -494,7 +494,7 @@ i
 {
     margin: 0;
 } 
-.card2:hover .textAside
+.card2:hover .textAside /* Image et texte dans 2 div différentes*/
  {
     color: #0065FC;
    /* background-color: #DEEBFF;*/
@@ -712,7 +712,7 @@ i
     margin-bottom: auto;
 }
 
-.cardsActHover:hover /*Ajoute une couleur bleue au survol des cartes Activités"*/
+.cardsActHover:hover /*Ajoute une couleur bleue au survol des cartes Activités, image et texte dans la même div*/
 {
     color: #0065FC;
 }
