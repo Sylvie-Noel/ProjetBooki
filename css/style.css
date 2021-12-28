@@ -889,7 +889,7 @@ li a
     {
         padding-left: 3%;
         padding-right: 3%;
-        
+        padding-top: 2%;
         margin-right: 15px;
     }
     .card
@@ -906,6 +906,13 @@ li a
    p
    {
        font-size: 12px;
+   }
+   .sizeAsidePop
+   {
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 2%;
+    margin-left: 15px; 
    }
 }
 
