@@ -79,7 +79,11 @@ h3, .filterText, .buttonSearch, .afficher
 }
 p
 {
-    font-size: 14px; 
+    font-size: 16px; 
+}
+span
+{
+    font-weight: bold;
 }
 /*CHARTE DE COULEURS*/
 .colorBlue
@@ -855,13 +859,21 @@ li a
     
    
 
-@media screen and (max-width: 1320px)
+@media screen and (max-width: 1340px)
 {
-    h3
+    h3, p
+    {
+        font-size: 15px;
+    }
+   
+   
+}
+@media screen and (max-width:1276px)
+{
+    h3, p
     {
         font-size: 14px;
     }
-   
 }
 @media screen and (max-width:1260px)
 {
@@ -897,11 +909,18 @@ li a
    }
 }
 
-@media screen and (max-width:1129px) 
+@media screen and (max-width:1150px) 
 {
-    h3
+    h3, p
     {
         font-size: 13px;
+    }
+}
+@media screen and (max-width:1180px) 
+{
+    h3, p
+    {
+        font-size: 12px;
     }
 }
 @media screen and (max-width:1068px) 
@@ -924,10 +943,7 @@ li a
     {
          padding: 0 3.8% 0 3.8% ;
     }
-    h3
-    {
-        font-size: 12px;
-    }
+   
 }
 
 @media screen and (max-width:1010px) and (min-width:992px)
@@ -957,7 +973,7 @@ li a
         flex-direction: column;
         
     }
-    h3
+    h3, p
     {
         font-size: 17px;
     }
@@ -972,6 +988,8 @@ li a
   {
       min-width: 47%;
       max-width: 48%;
+      min-height: 210px;
+      max-height: 215px;
   }
   .sizeAsidePop
   {
@@ -1067,6 +1085,10 @@ li a
     {
         flex-direction: column;
     }
+    h3, p
+    {
+        font-size: 17px;
+    }
     .sizeHebergement
     {
         background-color: transparent;
@@ -1077,7 +1099,12 @@ li a
     .card
     {
         min-width: 100%;
-        height: auto;
+        min-height: 210px;
+        max-height: 210px;
+    }
+    .cardText p
+    {
+        margin: 5px 0 5px 0;
     }
     .sizeAsidePop
     {
