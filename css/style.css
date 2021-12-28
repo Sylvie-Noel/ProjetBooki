@@ -6,14 +6,12 @@
 
 *
 {
-    font-family: 'Raleway', sans-serif; /*Peut qu'il faudra préciser quelle police exactement plus tard exemple régular ?*/
+    font-family: 'Raleway', sans-serif;
 }
-html, body /*rajoute une marge au coté droit et gauche de la page*/
+html, body
  {
      padding: 0;
  }
-
-/* Les couleurs qui seront utiliseés bleu (#0065FC), un bleu plus clair bleu (#DEEBFF),*/
 
 
 /*CLASSES GENERALES*/
@@ -24,7 +22,7 @@ html, body /*rajoute une marge au coté droit et gauche de la page*/
     align-items: center;
 }
 
-.spaceBlogolien /* space-betwen */
+.spaceBlogolien /* Permet de mettre de la distance entre le logo et les liens de nav*/
 {
     display: flex;
     justify-content: space-between;
@@ -39,7 +37,7 @@ html, body /*rajoute une marge au coté droit et gauche de la page*/
 }
 
 
-.spaceliensaround  /*sizelien*/
+.space-liens-around
 {
     display: flex;
     justify-content: space-around;
@@ -50,15 +48,8 @@ html, body /*rajoute une marge au coté droit et gauche de la page*/
 {
     margin: 0 58px 0 58px;
 }
-/*.logo, .recherche, .filtres, .info, .hébergements, .activités
-{
-    margin-left: 58px;
-}
-.hébergements, .activités
-{
-    margin-right: 58px;
-}*/
-h1 /*le CCS normalize emp^che la modofocation de la taille de police*/
+
+h1 /*le CCS normalize empêchait la modification de la taille de police, j'ai mis sous forme de comment le h1 em*/
 {
     font-size: 21px;
     font-weight: bolder;
@@ -86,6 +77,8 @@ span
 {
     font-weight: bold;
 }
+
+
 /*CHARTE DE COULEURS*/
 .colorBlue
 {
@@ -116,7 +109,7 @@ span
 /*NAV*/
 .adecorationone
 {
-    text-decoration: none;  /*Ok*/
+    text-decoration: none;  /*Retire la décoration du lien*/
 }
 
 .textBold
@@ -134,15 +127,9 @@ span
 
 li
 {   
-    background-color: transparent;/*.sizelink{width: 140px;height: 99px;}*/
+    background-color: transparent;/*Width et height pour donner une hauteur et une largeur au conteneur li*/
     width: 150px; 
     height: 99px;
-    
-    /*margin: auto;retirépas sur qu'il soit utile */
-    /*Le inlin-block est important car sans ça le text decoration non ne fonctionnerait pas*/ 
-    /* change mon flex pour un inline-block*/
-     /* display: list-item annule l'effet de text décoration: none;*/
-      /*quand le text align center est dans le nax les li se mettent au milieu quand dans li le ils s'affichent au début du ul*/
 }
 
 ul, li
@@ -151,16 +138,15 @@ ul, li
     display: flex;
     justify-content: center;
     align-items: center;
-    Margin: 0px;
+    Margin: 0px; /*Permet de coller le border top du nav en haut de la page"*/
 }
 
-.navborder:hover > .acolor
-{
-    
+.navborder:hover > .acolor /*Colore le lien en bleu au survol*/
+{  
     color: blue;
 }
 
-.navborder:hover /*rajoute une bordure bleue au survol du lien "Hébergement" et "Activités" aux liens du menu nav*/
+.navborder:hover /*rajoute une bordure bleue au survol des liens "Hébergements" et "Activités" du menu nav*/
 {
     border-top: 2px solid blue;
 }
@@ -339,17 +325,10 @@ ul, li
     margin-bottom: 5%;
     
 }
-.displayFlex
+.hébergements
 {
     display: flex;
 }
-/*.imgHebergement
-{
-    width: 100%;
-    height: 150px;
-    background-color: chartreuse;
-    border-radius: 20px 20px 0 0;
-}*/
  .card
  {
     min-width: 30%; /*utiliser les pourcentage*/ 
@@ -377,10 +356,9 @@ ul, li
    
     flex: 2;
 }
- .card:hover .cardText
+ .card:hover .cardText /*Ajoute une couleur bleue au survol du texte de card qui est placé dans une div différente*/
  {
     color: #0065FC;
-   /* background-color: #DEEBFF;*/
     border-radius: 0 0 20px 20px;
  }
  
@@ -393,7 +371,6 @@ ul, li
     text-align:start;
     height: 96px;
     margin: 0;
-    /*display: contents;*/  
 }
 .cardText h3
 {
@@ -406,14 +383,11 @@ ul, li
 .stars
 {
     display: flex;
-   
+ 
     align-items: flex-end;
     margin-bottom: 10px;
 }
-.stars i
-{
-    vertical-align: bottom;
-}
+
 i
 {
     font-size: 14px;
@@ -425,15 +399,8 @@ i
 }
 .objectFit
  {
-     object-fit: cover; /* Peut avoir comme valeur cover, contain, fill ou scale daown*/
+     object-fit: cover; /* Peut avoir comme valeur cover, contain, fill ou scale down*/
  }
- /*.cardflexBhebergement
- {
-     display: flex;
-     justify-content: space-around;
-     align-items: center;
-     
- }*/
 
  .flexwrapHebergement
  {
@@ -468,14 +435,12 @@ i
     display: flex;
     flex-direction: column;
 }
- .card2  /* il faut impérativment un display block dans les cards*/
+ .card2
  {
     width: 100%; /*utiliser les pourcentage*/ 
     margin: 0;  /*En mettant auto pour ce paramêtre ça fait l'effet d'un flex around 10% c'est beaucoup trop 1 % léger décalage de 12 px*/
     background-color: cadetblue;
     border-radius: 20px 20px 20px 20px;
-    display: block;  
-    align-items:center;
     height: 160px;
     box-shadow: 0 4px 8px 0 gray;
     transition: 0.3s;
@@ -510,7 +475,6 @@ i
 {
     height: 170px;
     width: 40%;
-    /*display: flex;*/
 }
 .marginBotImg12
 {
@@ -530,7 +494,7 @@ i
 {
     margin: 0;
 } 
-.card2:hover .textAside
+.card2:hover .textAside /* Image et texte dans 2 div différentes*/
  {
     color: #0065FC;
    /* background-color: #DEEBFF;*/
@@ -557,19 +521,7 @@ i
     justify-content: space-between;
     flex-direction: column;
 }
-/*.cardAside img */
-/*
-{
-    height: 120px;
-    position: relative;
-    overflow: hidden;
-    
-    object-fit: cover;
-    border-radius: 20px 20px 0 0;
-    border: solid 5px white;
-    box-shadow: 0 32px 35px 0 color #0065FC;
-    
-}*/
+
 
 /*ACTIVITES*/
 
@@ -670,11 +622,6 @@ i
 {
     box-shadow: 0 18px 32px 0 gray;
 }
-/*.cardActBetween
-{
-   display: flex;
-    justify-items: space-between;
-}*/
 
 .cardAct2
 {
@@ -765,28 +712,10 @@ i
     margin-bottom: auto;
 }
 
-.cardsActHover:hover /*Ajoute une couleur bleue au survol des cartes Activités"*/
+.cardsActHover:hover /*Ajoute une couleur bleue au survol des cartes Activités, image et texte dans la même div*/
 {
     color: #0065FC;
 }
-
-
-/*.cardActTextmarginBot*/
-
-/*.cardImage img
-{
-    height: 120px;
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 20px 20px 0 0;
-    border: solid 5px white;
-    box-shadow: 0 32px 35px 0 color #0065FC;
-    flex: 2;
-}*/
-
-
 
 
 /* PARTIE FOOTER */
@@ -900,10 +829,6 @@ li a
         min-width: 30.5%;
         max-width: 30.5%;
     }
-   p
-   {
-       font-size: 12px;
-   }
    .sizeAsidePop
    {
     padding-left: 3%;
@@ -952,23 +877,14 @@ li a
 
 @media screen and (max-width:1010px) and (min-width:992px)
 {
-    /*.spaceliensaround
-    {
-        width: 45%;
-    }*/
    
-    
     .card
     {
         min-width: 30.5%;
         max-width: 30.7%;
     }
-  
-  
-
-    
 }
-/*@media screen and (min-width:992px)*/
+
 
 @media screen and (max-width:991px) and (min-width:768px)
 {
@@ -1163,12 +1079,3 @@ li a
         margin-left: 0;
     }
 }
-/*
-    height: 120px;
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 20px 20px 0 0;
-    border: solid 5px white;
-    box-shadow: 0 32px 35px 0 color #0065FC;*/
