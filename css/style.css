@@ -6,9 +6,9 @@
 
 *
 {
-    font-family: 'Raleway', sans-serif; /*Peut qu'il faudra préciser quelle police exactement plus tard exemple régular ?*/
+    font-family: 'Raleway', sans-serif;
 }
-html, body /*rajoute une marge au coté droit et gauche de la page*/
+html, body
  {
      padding: 0;
  }
@@ -24,7 +24,7 @@ html, body /*rajoute une marge au coté droit et gauche de la page*/
     align-items: center;
 }
 
-.spaceBlogolien /* space-betwen */
+.spaceBlogolien /* Permet de mettre de la distance entre le logo et les liens de nav*/
 {
     display: flex;
     justify-content: space-between;
@@ -39,7 +39,7 @@ html, body /*rajoute une marge au coté droit et gauche de la page*/
 }
 
 
-.spaceliensaround  /*sizelien*/
+.space-liens-around
 {
     display: flex;
     justify-content: space-around;
@@ -50,15 +50,8 @@ html, body /*rajoute une marge au coté droit et gauche de la page*/
 {
     margin: 0 58px 0 58px;
 }
-/*.logo, .recherche, .filtres, .info, .hébergements, .activités
-{
-    margin-left: 58px;
-}
-.hébergements, .activités
-{
-    margin-right: 58px;
-}*/
-h1 /*le CCS normalize emp^che la modofocation de la taille de police*/
+
+h1 /*le CCS normalize empêchait la modification de la taille de police, j'ai mis sous forme de comment le h1 em*/
 {
     font-size: 21px;
     font-weight: bolder;
@@ -116,7 +109,7 @@ span
 /*NAV*/
 .adecorationone
 {
-    text-decoration: none;  /*Ok*/
+    text-decoration: none;  /*Retire la décoration du lien*/
 }
 
 .textBold
@@ -151,12 +144,11 @@ ul, li
     display: flex;
     justify-content: center;
     align-items: center;
-    Margin: 0px;
+    Margin: 0px; /*Permet de coller le border top du nav en haut de la page"*/
 }
 
-.navborder:hover > .acolor
-{
-    
+.navborder:hover > .acolor /*Colore le lien en bleu au survol*/
+{  
     color: blue;
 }
 
