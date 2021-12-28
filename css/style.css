@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
 *
 {
     box-sizing: border-box;
@@ -61,18 +61,20 @@ html, body /*rajoute une marge au coté droit et gauche de la page*/
 h1 /*le CCS normalize emp^che la modofocation de la taille de police*/
 {
     font-size: 21px;
+    font-weight: bolder;
 }
 h2
 {
-    font-size: 17px;
+    font-size: 20px;
+    font-weight: bolder;
 }
 h3
 {
-    font-size: 14px;
+    font-size: 16px;
 }
-h2, h3, .filterText, .buttonSearch, .afficher
+h3, .filterText, .buttonSearch, .afficher
 {
-    font-weight: bold;
+    font-weight: bolder;
     
 }
 p
@@ -853,29 +855,12 @@ li a
     
    
 
-@media screen and (max-width: 1379px)
+@media screen and (max-width: 1320px)
 {
-    /*.spaceliensaround
+    h3
     {
-         min-width: 35%;
-    }*/
-    /*.cardText p
-    {
-        font-size: 15px;
-    }*/
-
-
-   /* .cardsActivités  fait buguer ma page
-    {
-        display: flex;
-        flex-wrap: wrap;
-        min-width: 195px;
-        max-width: 25%;
-    }*/
-    /*.cardAct1, .cardDouble, .cardAct2
-    {
-        max-width: 300px;
-    }*/
+        font-size: 14px;
+    }
    
 }
 @media screen and (max-width:1260px)
@@ -899,10 +884,6 @@ li a
         min-width: 30.5%;
         max-width: 30.5%;
     }
-    h3
-    {
-        font-size: 12px;
-    }
    p
    {
        font-size: 12px;
@@ -916,7 +897,13 @@ li a
    }
 }
 
-
+@media screen and (max-width:1129px) 
+{
+    h3
+    {
+        font-size: 13px;
+    }
+}
 @media screen and (max-width:1068px) 
 {
     .filtres
@@ -937,7 +924,10 @@ li a
     {
          padding: 0 3.8% 0 3.8% ;
     }
-    
+    h3
+    {
+        font-size: 12px;
+    }
 }
 
 @media screen and (max-width:1010px) and (min-width:992px)
