@@ -829,10 +829,6 @@ li a
         min-width: 30.5%;
         max-width: 30.5%;
     }
-   p
-   {
-       font-size: 12px;
-   }
    .sizeAsidePop
    {
     padding-left: 3%;
@@ -881,23 +877,14 @@ li a
 
 @media screen and (max-width:1010px) and (min-width:992px)
 {
-    /*.spaceliensaround
-    {
-        width: 45%;
-    }*/
    
-    
     .card
     {
         min-width: 30.5%;
         max-width: 30.7%;
     }
-  
-  
-
-    
 }
-/*@media screen and (min-width:992px)*/
+
 
 @media screen and (max-width:991px) and (min-width:768px)
 {
@@ -1092,12 +1079,3 @@ li a
         margin-left: 0;
     }
 }
-/*
-    height: 120px;
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 20px 20px 0 0;
-    border: solid 5px white;
-    box-shadow: 0 32px 35px 0 color #0065FC;*/
