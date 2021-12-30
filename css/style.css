@@ -1005,7 +1005,11 @@ li a
     {
         flex-direction: column;
     }
-    h3, p
+    h3
+    {
+        font-size: 18px;
+    }
+    p
     {
         font-size: 17px;
     }
@@ -1032,6 +1036,11 @@ li a
         border-radius: 0%;
         padding: 0 20px 0 20px;
         order: 1;
+    }
+    .textAside
+    {
+        padding-right: 4%;
+        padding-left: 4%;
     }
     .activités
     {
