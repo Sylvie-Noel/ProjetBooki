@@ -96,23 +96,27 @@ span
 {
     background-color: #F2F2F2;
 }
-
-
-/*NAV*/
-.adecorationone
+a
 {
     text-decoration: none;  /*Retire la décoration du lien*/
+    color: black;
 }
+
+/*NAV*/
+/*.adecorationone
+{
+    text-decoration: none; 
+}*/
 
 .textBold
 {
     font-weight: bold;
 }
 
-.acolor
+/*.acolor
 {
     color: black;
-}
+}*/
 
 li
 {   
@@ -762,11 +766,7 @@ h4
     text-align: center;
 }
 
-li a
-{
-    text-decoration: none;
-    color: black;
-}
+
 /*LES MEDIA QUERIES*/
 @media screen and (max-width: 1479px) and (min-width:1349px)
 
