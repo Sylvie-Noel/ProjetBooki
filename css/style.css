@@ -36,14 +36,6 @@ html, body
     align-items:flex-start
 }
 
-
-.space-links-around /*peut être à retirer vu que j'ai géré les liens dans le ul et le li de la navigation, devait servir à gérer l'espacement entre "hébergements" et "Activités"*/
-{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-}
 .marginGlobal
 {
     margin: 0 58px 0 58px;
