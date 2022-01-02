@@ -197,7 +197,7 @@ ul, li
 }
 
 
-.iconSize
+.iconSize /*taille de l'icône de la barre de recherche*/
 {
     height: 50px;
     width: 50px;
