@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
 *
 {
     box-sizing: border-box;
@@ -36,14 +36,6 @@ html, body
     align-items:flex-start
 }
 
-
-.space-liens-around
-{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-}
 .marginGlobal
 {
     margin: 0 58px 0 58px;
@@ -51,8 +43,8 @@ html, body
 
 h1 /*le CCS normalize empêchait la modification de la taille de police, j'ai mis sous forme de comment le h1 em*/
 {
-    font-size: 21px;
-    font-weight: bolder;
+    font-size: 23px;
+    font-weight: 700;
 }
 h2
 {
@@ -109,7 +101,8 @@ span
 /*NAV*/
 .adecorationone
 {
-    text-decoration: none;  /*Retire la décoration du lien*/
+    text-decoration: none; 
+    color: black;
 }
 
 .textBold
@@ -121,9 +114,6 @@ span
 {
     color: black;
 }
-
-
-
 
 li
 {   
@@ -138,7 +128,7 @@ ul, li
     display: flex;
     justify-content: center;
     align-items: center;
-    Margin: 0px; /*Permet de coller le border top du nav en haut de la page"*/
+    Margin: 0px; /*Permet de coller le border top du nav en haut de la page même s'il apparait barré dans l'inspecteur"*/
 }
 
 .navborder:hover > .acolor /*Colore le lien en bleu au survol*/
@@ -150,7 +140,7 @@ ul, li
 {
     border-top: 2px solid blue;
 }
-.navborder /*rajoute une bordure transparente au menu au lien de li*/
+.navborder /*rajoute une bordure transparente au menu au lien de li, permet de rajouter une marge gauche à "Hébergements" et "Activités" dans le nav*/
 {
     border-top: 1px solid transparent;
     margin: 0 0 0 10px;
@@ -161,6 +151,14 @@ ul, li
 
 
 /* RECHERCHE */
+.h1p h1
+{
+    margin-bottom: 0;
+}
+.h1p p
+{
+    margin: 10px 0 20px 0;
+}
 .containerRecherche
 {
     display: flex;
@@ -172,8 +170,6 @@ ul, li
 {
     /*width: 400px; emp^che les éléments de se coller*/
     border-radius: 15px; 
-    
-
 }
 
 .borderNone
@@ -197,7 +193,7 @@ ul, li
 }
 
 
-.iconSize
+.iconSize /*taille de l'icône de la barre de recherche*/
 {
     height: 50px;
     width: 50px;
@@ -222,15 +218,20 @@ ul, li
 /* FILTRES */
 .margeFilter
 {
-    margin-top: 50px;
-    margin-bottom: 25px;
+    margin-top: 30px;
+    margin-bottom: 40px;
 }
 
 .filtres
 {
     display: flex;
     align-items: center;
-    
+}
+.flexFilter
+{
+    display: flex;
+    align-items: center;
+   /* justify-content: flex-start;*/
 }
 .filtresWrap
 {
@@ -283,7 +284,7 @@ ul, li
    display: flex;
 }  
 
-.spaceBlogolien i  /* Sans ça la balise i n'est pas en flex */
+.flexFilter i  /* Sans ça la balise i n'est pas en flex */
 {
     display: flex;
 }
@@ -772,12 +773,12 @@ h4
     width: 100%; 
     text-align: center;
 }
-
-li a
+.ulFooter a
 {
-    text-decoration: none;
+    text-decoration: none;  /*Retire la décoration du lien*/
     color: black;
 }
+
 /*LES MEDIA QUERIES*/
 @media screen and (max-width: 1479px) and (min-width:1349px)
 
@@ -946,7 +947,7 @@ li a
     {
         border-bottom: 3px solid #F2F2F2;
     }
-    .space-links-around
+    .container-links-width
     {
         width: 100%;
     }

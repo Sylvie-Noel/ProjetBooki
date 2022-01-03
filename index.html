@@ -10,18 +10,18 @@
     </head>
 <body> 
     <div class="marginGlobal">
-	    <header> 
-	    <!--LOGO MENU DEBUTS"--> 
-        
+	    
+        <!--LOGO MENU NAV DEBUTS"--> 
+        <header> 
             <nav>
-                <div class="nav spaceBlogolien">
+                <div class="nav spaceBlogolien"> <!--Permet de gérer l'espace entre le logo et la navigation-->
                     <div class="logo">  
                         <img class="Logo" src="Images/logo/Booki@3x.png" alt="Logo Booki" width="110" height="50"> 
                     </div>
                     
-                    <ul class="space-links-around"> 
+                    <ul class="container-links-width"> <!--En version mobile attribue au conteneur des liens "Hébergments" et "Activités 100% de la largeur de l'écran"-->
                         <li class="navborder"> 
-                            <a class="adecorationone acolor" href="#Hébergements">Hébergements</a>
+                            <a class="adecorationone acolor" href="#Hébergements">Hébergements</a> <!--adecorationone retire la déco des liens, acolor colore les liens en noir et permet coloration bleu au survol-->
                         </li> 
                         <li class="navborder"> 
                             <a class="adecorationone acolor" href="#Activités">Activités</a>
@@ -29,7 +29,6 @@
                     </ul> 
                 </div> 
             </nav>
-        
         </header>
 
 
@@ -39,57 +38,57 @@
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
             </div>
-             <div class="containerRecherche">
-                <div class="borderSearch ">
+             <div class="containerRecherche"> <!--Contenenur de la barre de recherche-->
+                <div class="borderSearch "> <!--Permet de donner une taille au conteneur de l'icône-->
                     <div class="backcolorGrey flexCenter iconSize">
                         <i class="fas fa-map-marker-alt"></i>
                     </div>
                 </div>
             
-                <div>
+                <div> <!--Zone de texte du moteur de recherche-->
                     <input class="borderNone paddingSearch searchSize flexCenter" type="search" value="Marseille, France" />
                 </div>
+                <!--Bouton Rechercher-->
                 <div class="buttonSearch backColorBlue flexCenter">Rechercher</div>
                 <div class="buttonSearch2 backColorBlue flexCenter"><i class="fas fa-search"></i></div>
             </div>
         </section>
            
             
-        <!--FILTRES-->
-         
-        <div>
-             <div class="filtres  margeFilter">
+        <!--FILTRES--> 
+        <section>
+             <div class="filtres  margeFilter"> <!--Conteneur des filtres, margeFilter permet d'ajuster les marges-->
                 <div class="margeFilterH3"><h3>Filtres</h3></div>
                 <div class="filtresWrap">
-                    <div class=" spaceBlogolien textFilterIcons flexCenter ">
-                        <i class="fas fa-money-bill-wave fa-lg filterIcones flexCenter"></i>
+                    <div class=" flexFilter textFilterIcons flexCenter "> <!--flexFilter align les éléments au centre verticalement-->
+                        <i class="fas fa-money-bill-wave fa-lg filterIcones flexCenter"></i> <!--flexCenter aligne les élément horizontalement-->
                         <div class="filterText flexCenter">Economique</div>
                     </div>
                     
-                    <div class="spaceBlogolien textFilterIcons">
+                    <div class="flexFilter textFilterIcons">
                         <i class="fas fa-child fa-lg filterIcones flexCenter"></i>
                         <div class="filterText flexCenter">Familial</div>
                     </div>
                     
-                    <div class="spaceBlogolien textFilterIcons">
+                    <div class="flexFilter textFilterIcons">
                         <i class="fas fa-heart fa-lg filterIcones flexCenter"></i>
                         <div class="filterText flexCenter">Romantique</div>
                     </div>
-                    <div class="spaceBlogolien textFilterIcons">
+                    <div class="flexFilter textFilterIcons">
                         <i class="fas fa-dog fa-lg filterIcones flexCenter"></i>
                     <div class="filterText flexCenter">Animaux autorisés</div>
                 </div>
-            </div>
+                </div>
             </div>
    
             <!--INFORMATION-->        
-            <div class="info">
+            <div class="info"> <!--parentIcon sert à gérer les dimensions du cercle autour de l'icone i-->
                 <div class="parentIcon flexCenter"><i class="fas fa-info fa-xs colorBlue"></i></div>
                 <div class="infoText">
                     <p>Plus de 500 logements sont disponibles dans cette ville</p>
                 </div>
             </div>
-        </div>
+        </section>
        
 
         <!--HEBERGEMENT-->
