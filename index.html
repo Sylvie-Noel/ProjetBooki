@@ -38,7 +38,7 @@
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
             </div>
-             <div class="containerRecherche"> <!--Contenenur de la barre de recherche-->
+             <div class="containerRecherche"> <!--Conteneur de la barre de recherche-->
                 <div class="borderSearch "> <!--Permet de donner une taille au conteneur de l'icône-->
                     <div class="backcolorGrey flexCenter iconSize">
                         <i class="fas fa-map-marker-alt"></i>
@@ -61,7 +61,7 @@
                 <div class="margeFilterH3"><h3>Filtres</h3></div>
                 <div class="filtresWrap">
                     <div class=" flexFilter textFilterIcons flexCenter "> <!--flexFilter align les éléments au centre verticalement-->
-                        <i class="fas fa-money-bill-wave fa-lg filterIcones flexCenter"></i> <!--flexCenter aligne les élément horizontalement-->
+                        <i class="fas fa-money-bill-wave fa-lg filterIcones flexCenter"></i> <!--flexCenter aligne les éléments horizontalement-->
                         <div class="filterText flexCenter">Economique</div>
                     </div>
                     
@@ -84,7 +84,7 @@
             <!--INFORMATION-->        
             <div class="info"> <!--parentIcon sert à gérer les dimensions du cercle autour de l'icone i-->
                 <div class="parentIcon flexCenter"><i class="fas fa-info fa-xs colorBlue"></i></div>
-                <div class="infoText">
+                <div class="infoText"> <!--infoText gère la width min et max du texte quelque soit la taille d'écran-->
                     <p>Plus de 500 logements sont disponibles dans cette ville</p>
                 </div>
             </div>
@@ -92,12 +92,12 @@
        
 
         <!--HEBERGEMENT-->
-       <div class="hébergements">
-            <section class="sizeHebergement backcolorGrey">
+       <div class="hébergements"> <!--Conteneur englobant Hébergements à Marseille et les plus populaires-->
+            <section class="sizeHebergement backcolorGrey"> <!--Conteneur Hébergements à Marseille-->
                 <h2 id="Hébergements">Hébergements à Marseille</h2>
-                <div class="flexwrapHebergement">
+                <div class="flexwrapHebergement"> <!--Les cartes passent à la ligne en mode tablette et mobile-->
                         <div class="card ">
-                            <a class="adecorationone acolor" href="#">
+                            <a class="adecorationone acolor" href="#"> <!--Rend la carte clicable-->
                             <div class="cardImage"><img src="Images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière"></div>
                                 <div class="cardText">
                                     <h3>Auberge La Cannebière</h3>
@@ -136,8 +136,8 @@
                         <a class="adecorationone acolor" href="#">
                             <div class="cardImage"><img src="Images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel les mouettes"></div>
                             <div class="cardText">
-                            <h3>Hôtel Les mouettes</h3>
-                            <p>Nuit à partir de 76<span>&euro;</span></p>
+                                <h3>Hôtel Les mouettes</h3>
+                                <p>Nuit à partir de 76<span>&euro;</span></p>
                             <div class="stars">
                                 <i class="fas fa-star colorBlue"></i>
                                 <i class="fas fa-star colorBlue"></i>
@@ -148,8 +148,8 @@
                             </div>
                         </a>
                     </div>
-                    <div class="card">
 
+                    <div class="card">
                         <a class="adecorationone acolor" href="#">
                             <div class="cardImage"><img src="Images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer"></div>
                             <div class="cardText">
@@ -170,8 +170,8 @@
                         <a class="adecorationone acolor" href="#">
                             <div class="cardImage"><img src="Images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge le panier"></div>
                             <div class="cardText">
-                            <h3>Auberge Le panier</h3>
-                            <p>Nuit à partir de <span>23&euro;</span></p>
+                                <h3>Auberge Le panier</h3>
+                                <p>Nuit à partir de <span>23&euro;</span></p>
                             <div class="stars">
                                 <i class="fas fa-star colorBlue"></i>
                                 <i class="fas fa-star colorBlue"></i>
@@ -182,19 +182,20 @@
                             </div>
                         </a>
                     </div>
+
                     <div class="card">
                         <a class="adecorationone acolor" href="#">
                             <div class="cardImage"><img src="Images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina"></div>
                             <div class="cardText">
                                 <h3>Hôtel chez Amina</h3>
                                 <p>Nuit à partir de 96<span>&euro;</span></p>
-                                <div class="stars">
-                                    <i class="fas fa-star colorBlue"></i>
-                                    <i class="fas fa-star colorBlue"></i>
-                                    <i class="fas fa-star colorBlue"></i>
-                                    <i class="fas fa-star colorBlue"></i>
-                                    <i class="fas fa-star colorBlue"></i>
-                                </div>
+                            <div class="stars">
+                                <i class="fas fa-star colorBlue"></i>
+                                <i class="fas fa-star colorBlue"></i>
+                                <i class="fas fa-star colorBlue"></i>
+                                <i class="fas fa-star colorBlue"></i>
+                                <i class="fas fa-star colorBlue"></i>
+                            </div>
                             </div>
                         </a>
                     </div>
@@ -206,89 +207,89 @@
             </section>
                 
             <!--PARTIE LES PLUS POPULAIRES-->
-            <aside class="sizeAsidePop backcolorGrey">
-                    <div class="spaceBlogolien">
+            <aside class="sizeAsidePop backcolorGrey"> <!--Conteneur les plus populaires-->
+                    <div class="spaceBlogolien">  <!--Espace entre le titre h2 et l'icone charte-->
                         <h2>Les plus populaires</h2>
                         <i class="fas fa-chart-line"></i>
                    </div>
-                    <div class="containerAside">
-                        <a class="adecorationone acolor flexRowAside" href="#">
+                   
+                <div class="containerAside">  <!--Conteneur des cartes aside-->
+                    <a class="adecorationone acolor flexRowAside" href="#">
                         <div class="flexCenterPop marginBotImg12 card2">
-                            
-                                <div class="imageAside "><img src="Images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hotel du soleil du matin"></div>
-                                <div class="textAside">
-                                    <div>
-                                        <h3>Hôtel du soleil du mâtin</h3>
-                                        <p>Nuit à partir de 128<span>&euro;</span></p>
-                                    </div>
-                                    <div class="popStars">
-                                        <i class="fas fa-star colorBlue"></i>
-                                        <i class="fas fa-star colorBlue"></i>
-                                        <i class="fas fa-star colorBlue"></i>
-                                        <i class="fas fa-star colorBlue"></i>
-                                        <i class="fas fa-star colorBlue"></i>
-                                    </div>                               
+                            <div class="imageAside "><img src="Images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hotel du soleil du matin"></div>
+                            <div class="textAside">
+                                <div>
+                                    <h3>Hôtel du soleil du mâtin</h3>
+                                    <p>Nuit à partir de 128<span>&euro;</span></p>
                                 </div>
-                           
+                                <div class="popStars">
+                                    <i class="fas fa-star colorBlue"></i>
+                                    <i class="fas fa-star colorBlue"></i>
+                                    <i class="fas fa-star colorBlue"></i>
+                                    <i class="fas fa-star colorBlue"></i>
+                                     <i class="fas fa-star colorBlue"></i>
+                                </div>                               
+                            </div>
                         </div>
-                    </a>
-                        <a class="adecorationone acolor flexRowAside" href="#">
-                        <div class="flexCenterPop card2 marginBotImg12">
-                                <div class="imageAside "><img src="Images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau Chambre d'hôte"></div>
-                                <div class="textAside">
-                                    <h3>Au coeur de l'eau Chambres d'hôte</h3>
-                                    <p class="pAside">Nuit à partir de 71<span>&euro;</span></p>
-                                    <div class="popStars">
-                                        <i class="fas fa-star colorBlue"></i>
-                                        <i class="fas fa-star colorBlue"></i>
-                                        <i class="fas fa-star colorBlue"></i>
-                                        <i class="fas fa-star colorBlue"></i>
-                                        <i class="fas fa-star colorGrey"></i>
-                                    </div>
-                               
-                                </div>
-                            
-                        </div>
-                    </a>
+                    </a>   
+                        
                     <a class="adecorationone acolor flexRowAside" href="#">
                         <div class="flexCenterPop card2 marginBotImg12">
-                            
-                                <div class="imageAside"><img src="Images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et Blanc"></div>
-                                <div class="textAside">
-                                    <h3>Hôtel Tout bleu et Blanc</h3>
-                                    <p>Nuit à partir de 68<span>&euro;</span></p>
-                                    <div class="popStars">
-                                        <i class="fas fa-star colorBlue"></i>
-                                        <i class="fas fa-star colorBlue"></i>
-                                        <i class="fas fa-star colorBlue"></i>
-                                        <i class="fas fa-star colorBlue"></i>
-                                        <i class="fas fa-star colorGrey"></i>
-                                    </div>
-                                </div>    
+                            <div class="imageAside "><img src="Images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau Chambre d'hôte"></div>
+                            <div class="textAside">
+                                <h3>Au coeur de l'eau Chambres d'hôte</h3>
+                                <p class="pAside">Nuit à partir de 71<span>&euro;</span></p>
+                            <div class="popStars">
+                                <i class="fas fa-star colorBlue"></i>
+                                <i class="fas fa-star colorBlue"></i>
+                                <i class="fas fa-star colorBlue"></i>
+                                <i class="fas fa-star colorBlue"></i>
+                                <i class="fas fa-star colorGrey"></i>
+                            </div>
+                            </div>                            
                         </div>
                     </a>
-                    </div>
+
+                    <a class="adecorationone acolor flexRowAside" href="#">
+                        <div class="flexCenterPop card2 marginBotImg12">                            
+                            <div class="imageAside"><img src="Images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et Blanc"></div>
+                            <div class="textAside">
+                                <h3>Hôtel Tout bleu et Blanc</h3>
+                                <p>Nuit à partir de 68<span>&euro;</span></p>
+                            <div class="popStars">
+                                <i class="fas fa-star colorBlue"></i>
+                                <i class="fas fa-star colorBlue"></i>
+                                <i class="fas fa-star colorBlue"></i>
+                                <i class="fas fa-star colorBlue"></i>
+                                <i class="fas fa-star colorGrey"></i>
+                            </div>
+                            </div>    
+                        </div>
+                    </a>
+                </div>
                     
             </aside>
         </div>
                 
         <!--PARTIE ACTIVITES-->
         
-        <div class="activités">
+        <div class="activités">  <!--Conteneur global d'Activités-->
             <h2 id="Activités">Activités à Marseille</h2>
-            <section class="cardsActivités">
+            <section class="cardsActivités"> <!--Conteneur des cartes Activités-->
                 <div class="cardAct1">
                     <a class="adecorationone acolor " href="#">
                         <div class="cardsActHover"><img src="Images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
-                        <div class="cardActText"><h3 >Vieux Port</h3></div>                    
+                            <div class="cardActText">
+                                <h3 >Vieux Port</h3>
+                            </div>                    
                         </div>
                     </a>
                 </div>
                 
-                <div class="cardDouble">
+                <div class="cardDouble">  <!--Conteneur des cartes doubles-->
                     <div class="cardAct60"> <!--Sans cette div bug graphique car le a doit être à l'intérieur-->
                         <a class="adecorationone acolor lienActFlexColumn" href="#">
-                            <div class="cardsActHover "> <!--En laissant de cardAct60 ici l'effet de carte est plus marqué à voir-->
+                            <div class="cardsActHover "> <!--cardsActHover change la couleur du texte au survol-->
                                 <img src="Images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
                             <div class="cardActText"><h3>Fort de Pomègues</h3></div>                    
                             </div>
