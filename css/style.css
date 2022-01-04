@@ -788,29 +788,17 @@ h4
     color: black;
 }
 
+
 /*LES MEDIA QUERIES*/
-@media screen and (max-width: 1479px) and (min-width:1349px)
-
-{
-    /*.card    Pour que la taille des image "Hébergement" fassent 246px de width
-    {
-        min-width: 220px;
-        max-width: 30%;
-    }*/
-}
-
-    
-   
 
 @media screen and (max-width: 1340px)
 {
     h3, p
     {
         font-size: 15px;
-    }
-   
-   
+    }   
 }
+
 @media screen and (max-width:1276px)
 {
     h3, p
@@ -818,6 +806,7 @@ h4
         font-size: 14px;
     }
 }
+
 @media screen and (max-width:1260px)
 {
     .flexwrapHebergement
@@ -881,21 +870,18 @@ h4
     .cardText
     {
          padding: 0 3.8% 0 3.8% ;
-    }
-   
+    } 
 }
-
+/*VERSION DESKTOP*/
 @media screen and (max-width:1010px) and (min-width:992px)
 {
-   
     .card
     {
         min-width: 30.5%;
         max-width: 30.7%;
     }
 }
-
-
+/*VERSION TABLETTE*/
 @media screen and (max-width:991px) and (min-width:768px)
 {
     .hébergements
@@ -945,7 +931,7 @@ h4
         margin-bottom: 58px;
     }
 }
-
+/*VERSION MOBILE*/
 @media screen and (max-width:767px)
 {
     .nav
