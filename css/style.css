@@ -188,8 +188,7 @@ ul, li
     color:black;
     font-weight: bold; 
 }
-
-.iconSize /*taille de l'icône de la barre de recherche*/
+.iconSize /*taille du conteneur de l'icône de la barre de recherche*/
 {
     height: 50px;
     width: 50px;
