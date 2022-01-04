@@ -199,7 +199,10 @@ ul, li
     width: 50px;
     border-radius: 15px 0 0 15px
 }
-
+.fa-map-marker-alt
+{
+    font-size: 19px;
+}
 .buttonSearch
 {
     height: 50px;
@@ -231,12 +234,11 @@ ul, li
 {
     display: flex;
     align-items: center;
-   /* justify-content: flex-start;*/
 }
 .filtresWrap
 {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /*Les filtres passent à la ligne en réduisant la fenêtre*/
    
 }
 
@@ -281,9 +283,12 @@ ul, li
     color: #0065FC;
     background-color: #DEEBFF;
     align-items: center;
-   display: flex;
+    display: flex;
 }  
-
+.textFilterIcons .fa-money-bill-wave
+{
+    font-size: 18px;
+}
 .flexFilter i  /* Sans ça la balise i n'est pas en flex */
 {
     display: flex;
@@ -318,8 +323,8 @@ ul, li
 
 /* HEBERGEMENT */
 .sizeHebergement
-{
-    flex: 2;            /* En retirant le height du conteneur le aside prend la même hauteur que le hébergement, avant il était plus petit*/
+{    /* En retirant le height du conteneur le aside prend la même hauteur que le hébergement, avant il était plus petit*/
+    flex: 2; /*sizeHerbergement prend 2 fois plus de place que sizeAsidePop qui est en flex 1*/ 
     margin-right: 20px;
     border-radius: 10px;
     padding: 30px 40px 0 40px;
@@ -435,6 +440,10 @@ i
 {
     display: flex;
     flex-direction: column;
+}
+.fa-chart-line
+{
+    font-size: 20px;
 }
  .card2
  {
@@ -964,6 +973,14 @@ h4
     ul
     {
         padding-left: 0;
+    }
+    li
+    {  
+        height: 55px;
+    }
+    .recherche
+    {
+        margin-top: 30px;
     }
     .h1p
     {
